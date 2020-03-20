@@ -18,7 +18,6 @@ def parse_args():
     parser.add_argument('-fi', '--from_index', help='', type=int, default="", required=True)
     parser.add_argument('-ts', '--to_state', help='', type=str, default="", required=True)
     parser.add_argument('-ti', '--to_index', help='', type=int, default="", required=True)
-    parser.add_argument('-o', '--output', help='', type=str, default="", required=True)
     parser.add_argument('-n', '--num_experiments', help='', type=int, default="", required=True)
 
     return parser.parse_args()
@@ -77,8 +76,4 @@ if __name__ == "__main__":
         from_ground_truth = get_emnist_digits(X, y, args.from_index)
         to_ground_truth = get_emnist_digits(X, y, args.to_index)
 
-    # out = cv2.VideoWriter(args.output, cv2.VideoWriter_fourcc(*'MJPG'), 20.0, (MNIST_DIMENSION,MNIST_DIMENSION), False)
-    
     create_video_data(from_ground_truth, to_ground_truth, args.num_experiments)
-
-    # skvideo.io.vwrite(args.output, video_data)
