@@ -8,6 +8,10 @@ pip install -r requirements.txt
 
 # Lattice Boltzmann Method
 
+![](./sound-speed.png)
+
+![](./energy-boltzmann.png)
+
 ![](./video.gif)
 
 # Design of Experiments
