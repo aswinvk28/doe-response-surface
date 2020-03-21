@@ -10,6 +10,6 @@ def get_XY(images_path, labels_path):
 def get_mnist_digits(X, y, num, idx):
     return X[y==num][idx].reshape(28,28)
 
-def get_emnist_digits(X, y, idx):
-    return X[y==idx].reshape(28,28)
+def get_emnist_digits(X, y, num, idx):
+    return X[y==num][idx].reshape(28,28)
 

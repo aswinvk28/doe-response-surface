@@ -25,10 +25,12 @@ def generate_flow(experiments, ground_truth, num_experiments):
 
 ![](./7to5.gif)
 
+![](./7to5-120.gif)
+
 # Execute the DOE transitions
 
 ```bash
 
-python experiment.py -d mnist -fs 5 -fi 0 -ts 7 -ti 0 -n 100
+python experiment.py -d mnist -fs 5 -fi 0 -ts 7 -ti 0 -n 100 -m center
 
 ```
